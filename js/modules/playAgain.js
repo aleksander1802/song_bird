@@ -18,8 +18,6 @@ function playAgain () {
     
 
     const mainResult = document.querySelector('.results__main');
-
-    
     
 }
 
