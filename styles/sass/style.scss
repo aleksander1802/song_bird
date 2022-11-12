@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Roboto:wght@700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 90%;
+    height: 100vh;    
+    color: aliceblue;
+    background: black;
+    margin: 0 auto;
+    font-family: 'Merienda', cursive;
+}
+
+.container {    
+    width: 100%; 
+    height: 100%;
+    padding: 20px; 
+}
+
+ 
+@import "blocks/header";
+@import "blocks/audio";
+@import "blocks/quizItems"; 
+@import "blocks/buttons"; 
+@import "blocks/quizWrapper"; 
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+ 

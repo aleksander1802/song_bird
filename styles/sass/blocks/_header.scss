@@ -1,0 +1,20 @@
+.header {
+    
+    &__main {
+        
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        &_title {           
+            font-size: 70px;
+            &-span {
+                color: aquamarine;
+            }
+
+        }
+        &_score {
+            font-size: 50px;
+        }
+    }
+}

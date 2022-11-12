@@ -1,0 +1,84 @@
+.button {
+
+
+    &__quiz {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: aquamarine;
+        }
+
+        &:active {
+            background-color: aqua;
+        }
+
+        &_img {
+            height: 100%;
+            width: 100%;
+
+            &-start {
+                content: "";
+                background-image: url("../styles/assets/icons/play.svg");
+                height: 40px;
+                width: 40px;
+
+            }
+        }
+
+        &_next {
+            font-family: 'Merienda', cursive;
+            font-weight: 700;
+            font-size: 35px;    
+            cursor: pointer;
+            width: 100%;
+            height: 80px;
+            color:aquamarine;
+            background-image: linear-gradient(0deg, black, rgb(30, 30, 30));
+            box-shadow: 0 4px 15px 0 rgba(52, 120, 222, 0.75);
+            text-shadow: 0 0 5px white;
+            margin-bottom: 40px;
+            &:active {
+                color: black;
+                background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(42, 42, 42));
+            }
+            &:hover {
+                animation: animeColorText 1s infinite linear;
+                border: 1px solid cyan;
+            }
+            @keyframes animeColorText {
+                0% {
+                    color:aquamarine;
+                    text-shadow: 0 0 5px white;
+                }
+                25% {
+                    color: black;
+                    text-shadow: 0 0 5px white;
+                }
+
+                50% {
+                    color: white;
+                    text-shadow: 0 0 5px aquamarine;
+                }
+
+                75% {
+                    color: black;
+                    text-shadow: 0 0 5px white;
+                }
+
+                100% {
+                    color:aquamarine;
+                    text-shadow: 0 0 5px white;
+                }
+            }
+            &:disabled {
+                color: black;
+                background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(42, 42, 42));
+                animation: none;
+                border: 1px solid black;
+            }
+        }
+    }
+}
