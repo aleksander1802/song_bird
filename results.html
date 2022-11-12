@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Song bird quiz</title>
 </head>
+
 <body>
-    <div class="result">Результаты</div>
+
+    <div class="container">
+        <header>
+            <div class="header__results results__header">
+                <h1 class="header__main_title header__results_title results__header_title">
+                    <a class="header__link">
+                        Результаты
+                        <span class="header__main_title-span">
+                            викторины
+                        </span></h1>
+                </a>
+               
+            </div>
+    
+    
+        </header>
+    
+        <main class="results__main">
+            
+    
+        </main>
+    
+        <footer class="index__footer">
+            <!-- <div class="index__footer_wrapper"> -->
+                <a href="https://github.com/aleksander1802"><i class="fa fa-github-square github index__footer_github" id="github"></i></a>
+
+                <div class="index__footer_year">
+                    Designed by Alexander Rudenko <br> ©RSSchool & ©Yem Digital 2022
+                </div>
+                
+                <a href="https://rs.school/js/"><img class="index__footer_rs" src="./styles/assets/icons/rs_school.svg" alt=""></a>
+            <!-- </div> -->
+                        
+                
+              
+        </footer>
+    </div>
+
+
+
+    <div class="containerHidden invisible">
+        <header >
+            <div class="header header__main logo">
+                <a class="header__link" href="./index.html">
+                    Song
+                    <span class="header__main_title-span">
+                        bird
+                    </span></h1>
+                </a>
+                <div class="header__main_score">Score: <span class="header__main_score-change">0</span> </div> 
+            </div>
+
+            <div class="quiz__category">
+                <div class="quiz__category_item quiz__category_item-active">Некие птицы</div>
+                <div class="quiz__category_item">Воробьиные</div>
+                <div class="quiz__category_item">Лесные птицы</div>
+                <div class="quiz__category_item">Певчие птицы</div>
+                <div class="quiz__category_item">Хищные птицы</div>
+                <div class="quiz__category_item">Морские птицы</div>
+            </div>
+                       
+        </header>
+
+        <main class="quiz">
+            
+            
+            
+            <div class="quiz__bird">
+                <img class="quiz__bird-image" src="./styles/assets/img/guess.png" alt="mystery bird">
+                <h3 class="quiz__bird-name">Угадай, кто я?</h3>
+                <div class="audio__player">
+                     
+                </div>
+            </div>           
+            
+
+            <div class="quiz__wrapper">
+
+                <div class="quiz__wrapper_options">
+
+                </div>
+
+                <div class="quiz__wrapper_item">
+                    
+                    
+                </div>
+
+            </div>
+
+            <button class="button__quiz_next">Next Level</button>
+
+        </main>
+
+    </div>
+    
+
+
+
+
+    <script src="./js/bundle.js"></script>
 </body>
+
 </html>

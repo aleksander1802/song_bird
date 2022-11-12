@@ -1,6 +1,8 @@
 
+import playAgain from './modules/playAgain';
 import options from './modules/options';
 import {trainingBirdsData, sparrowBirdsData, forestBirdsData, songBirdsData, predatorBirdsData, seaBirdsData} from './modules/db';
+
 
 // import {postData} from './services/services';
 
@@ -12,6 +14,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const birdImage = document.querySelector('.quiz__bird-image');
     const mainScore = document.querySelector('.header__main_score-change');   
     const inroDiv = document.querySelector('.quiz__wrapper_item'); 
+    
 
 
     let data =  [trainingBirdsData, sparrowBirdsData, forestBirdsData, songBirdsData, predatorBirdsData, seaBirdsData];
@@ -26,8 +29,8 @@ window.addEventListener('DOMContentLoaded', function() {
         categoryItem[num].classList.value = 'quiz__category_item quiz__category_item-active';  
     }    
 
-    console.log();
-
+    
+    
     button.addEventListener("click", () => {
         birdName.textContent = 'Угадай, кто я?';
         birdImage.src = './styles/assets/img/guess.png';
@@ -38,20 +41,9 @@ window.addEventListener('DOMContentLoaded', function() {
         if (count === 6) {
             count = 0;
             
-
+            window.location.href = 'results.html?&' + mainScore.textContent;
             
-            // const obj = {resultScore: mainScore.textContent}
-            // const json = JSON.stringify(obj);
-            
-             
-            // postData('http://localhost:3000/requests', json)
-            // .then(data => {
-            //     console.log(data)                
-            // })
-
-
             mainScore.textContent = '0';
-            window.location.href = 'results.html';            
         }
         
         options(data[count])
@@ -68,12 +60,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
 
     button.disabled = true;
-  
 
-    
-  
-    
-
-
+    playAgain()
 
 });
