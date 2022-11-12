@@ -62,9 +62,15 @@ body {
           flex-direction: row;
   cursor: pointer;
   width: 500px;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.721);
 }
 .header__main_nav-link {
   text-decoration: none;
@@ -80,6 +86,8 @@ body {
   color: inherit;
   font-size: 70px;
   font-weight: 900;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.721);
 }
 .header__link:hover {
   -webkit-animation: colorAnimateText 10s infinite linear;
@@ -194,8 +202,8 @@ body {
   max-height: 50px;
   width: 50px;
   height: 50px;
-  -ms-flex-item-align: start;
-      align-self: start;
+  -ms-flex-item-align: center;
+      align-self: center;
   cursor: pointer;
   border-radius: 100%;
 }
@@ -270,8 +278,8 @@ body {
   font-size: 20px;
 }
 .audio__player_volume {
-  -ms-flex-item-align: start;
-      align-self: start;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .audio__player_volume-change {
   overflow: hidden;
@@ -304,8 +312,8 @@ body {
 .audio__player_mute {
   max-width: 40px;
   max-height: 40px;
-  -ms-flex-item-align: start;
-      align-self: start;
+  -ms-flex-item-align: center;
+      align-self: center;
   cursor: pointer;
   border-radius: 100%;
 }
@@ -692,7 +700,7 @@ body {
 
 .quiz__wrapper {
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 540px;
@@ -818,10 +826,9 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 140px;
 }
 .index__footer_github {
   cursor: pointer;
@@ -865,6 +872,9 @@ body {
           animation: animateRS 3s linear infinite;
   -webkit-box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
           box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+  border-radius: 15px;
+  padding: 11px 19px;
+  margin: 0 40px;
 }
 @-webkit-keyframes animateRS {
   from {
@@ -894,6 +904,15 @@ body {
           animation: animateRS 3s linear infinite;
   text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
   cursor: default;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 90%;
+  z-index: -1;
 }
 
 .results__header_title {

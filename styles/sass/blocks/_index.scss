@@ -36,8 +36,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        padding-top: 40px;
+        justify-content: space-around;
+        margin-top: 140px;
         &_github {
             cursor: pointer;
             background-color: #18191f;
@@ -69,7 +69,10 @@
             background-color: #fff;            
             animation: animateRS 3s linear infinite;
             box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
-                0 0 200px #0072ff;    
+                0 0 200px #0072ff;
+            border-radius: 15px;
+            padding: 11px 19px;
+            margin: 0 40px;   
         } 
         @keyframes animateRS {
             from {
@@ -90,4 +93,13 @@
         }     
         
     }
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 90%;
+    z-index: -1;
 }

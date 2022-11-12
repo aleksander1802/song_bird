@@ -21,7 +21,11 @@
             flex-direction: row;
             cursor: pointer;
             width: 500px;
+            height: 100px;
+            align-items: center;
+            padding: 10px;
             justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.721);
             &-link {
                 text-decoration: none;
                 color: inherit;
@@ -38,6 +42,8 @@
         color: inherit;
         font-size: 70px;
         font-weight: 900;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.721);
         &:hover {
             animation: colorAnimateText 10s infinite linear;            
         }

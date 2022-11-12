@@ -13,7 +13,7 @@
         max-height: 50px;
         width: 50px;
         height: 50px;
-        align-self: start;
+        align-self: center;
         cursor: pointer;
         border-radius: 100%;
         &:hover {
@@ -78,7 +78,7 @@
         
     }
     &_volume {
-        align-self: start;
+        align-self: center;
         &-change {
             overflow: hidden;
             width: 100px;
@@ -110,7 +110,7 @@
     &_mute {
         max-width: 40px;
         max-height: 40px;
-        align-self: start;
+        align-self: center;
         cursor: pointer;
         border-radius: 100%;
         &:hover {

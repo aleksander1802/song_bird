@@ -5,60 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">    
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Song bird quiz</title>
 </head>
 
 <body>
 
+    <video preload="auto" loop id="myVideo" controls>
+        <source src="./styles/assets/video/46.mp4" type="video/mp4">
+    </video>
+
     <div class="container">
         <header>
             <div class="header header__main logo">
                 <h1 class="header__main_title">
                     <a class="header__link" href="./index.html">
-                        Song
+                            Song
                         <span class="header__main_title-span">
                             bird
-                        </span></h1>
-                </a>
+                        </span>
+                    </a>
+                </h1>
+
                 <nav class="header__main_nav">
                     <div><a class="header__main_nav-link" href="./index.html">На главную</a></div>
                     <div><a class="header__main_nav-link" href="./main.html">Викторина</a></div>
                 </nav>
             </div>
-    
-    
+
+
         </header>
-    
+
         <main class="index__main">
             <h2 class="index__main_title">Добро пожаловать на викторину " Song<span class="header__main_title-span">
                     bird
                 </span>"</h2>
             <p class="index__main_description">Цель данной викторины - угадать птицу по её пению.
-                Чтобы начать викторину, нажми на кнопку "Викторина" в меню, либо <a class="index__main_start" href="./main.html">здесь</a> !
+                Чтобы начать викторину, нажми на кнопку "Викторина" в меню, либо <a class="index__main_start"
+                    href="./main.html">здесь</a> !
             </p>
-    
-        </main>
-    
-        <footer class="index__footer">
-                        
-                <a href="https://github.com/aleksander1802"><i class="fa fa-github-square github index__footer_github" id="github"></i></a>
 
-                <div class="index__footer_year">
-                    Designed by Alexander Rudenko <br> ©RSSchool & ©Yem Digital 2022
-                </div>
-                
-                <a href="https://rs.school/js/"><img class="index__footer_rs" src="./styles/assets/icons/rs_school.svg" alt=""></a>
-              
+        </main>
+
+        <footer class="index__footer">
+
+            <a href="https://github.com/aleksander1802"><i class="fa fa-github-square github index__footer_github"
+                    id="github"></i></a>
+
+            <div class="index__footer_year">
+                Designed by Alexander Rudenko <br> ©RSSchool & ©Yem Digital 2022
+            </div>
+
+            <a href="https://rs.school/js/"><img class="index__footer_rs" src="./styles/assets/icons/rs_school.svg"
+                    alt=""></a>
+
         </footer>
     </div>
-    
 
 
 
 
-    
+
+    <script src="./js/video.js"></script>
 </body>
 
 </html>
