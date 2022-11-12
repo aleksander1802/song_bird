@@ -4,19 +4,90 @@
         margin-top: 50px;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.721);
+        cursor: default;
         &_title {
             font-size: 60px;
         }
+
         &_description {
             margin: 0 auto;
             width: 800px;
             font-size: 40px;
-            
+
         }
+
         &_link {
             font-size: 70px;
             text-decoration: none;
-            animation: colorAnimateText 10s infinite linear;            
+            animation: colorAnimateText 10s infinite linear;
         }
+        &_start {
+            font-size: 70px;
+            text-decoration: none;
+            color: aquamarine;
+            &:hover {
+                text-transform: uppercase;               
+            }
+        }
+    }
+
+    &__footer {        
+        font-size: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 40px;
+        &_github {
+            cursor: pointer;
+            background-color: #18191f;
+            color: #fff;
+            box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+                2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080;
+            border-radius: 29px;
+            padding: 11px 19px;
+            margin: 0 40px;
+            animation: animateGitHub 3s linear infinite;
+            text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+                0 0 200px #0072ff;                
+        } 
+        @keyframes animateGitHub {
+            from {
+                filter: hue-rotate(0deg);
+            }
+
+            to {
+                filter: hue-rotate(360deg);
+            }
+        }
+        &_rs {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            background-color: #fff;            
+            animation: animateRS 3s linear infinite;
+            box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+                0 0 200px #0072ff;    
+        } 
+        @keyframes animateRS {
+            from {
+                filter: hue-rotate(0deg);
+            }
+
+            to {
+                filter: hue-rotate(360deg);
+            }
+        }  
+        &_year {
+            font-size: 35px;
+            align-self: center;
+            animation: animateRS 3s linear infinite;
+            text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+                0 0 200px #0072ff;  
+            cursor: default;  
+        }     
+        
     }
 }
