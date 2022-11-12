@@ -1,0 +1,22 @@
+.index {
+    &__main {
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.721);
+        &_title {
+            font-size: 60px;
+        }
+        &_description {
+            margin: 0 auto;
+            width: 800px;
+            font-size: 40px;
+            
+        }
+        &_link {
+            font-size: 70px;
+            text-decoration: none;
+            animation: colorAnimateText 10s infinite linear;            
+        }
+    }
+}

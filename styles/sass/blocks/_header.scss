@@ -16,5 +16,72 @@
         &_score {
             font-size: 50px;
         }
+        &_nav {
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+            width: 500px;
+            justify-content: space-between;
+            &-link {
+                text-decoration: none;
+                color: inherit;
+                font-size: 40px;
+                &:hover {
+                    animation: colorAnimateText 10s infinite linear;
+                }
+            }
+        }
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: inherit;
+        font-size: 70px;
+        font-weight: 900;
+        &:hover {
+            animation: colorAnimateText 10s infinite linear;            
+        }
+        @keyframes colorAnimateText {            
+            0% {
+                color: rgb(255, 255, 255);
+            }
+            5% {
+                color: rgba(208, 222, 33, 1);
+            }
+            10% {
+                color: rgba(79, 220, 74, 1);
+            }
+            20% {
+                color: rgba(63, 218, 216, 1);
+            }   
+            30% {
+                color: rgba(47, 201, 226, 1);
+            }
+            40% {
+                color: rgba(28, 127, 238, 1);
+            }
+            50% {
+                color: rgba(95, 21, 242, 1);
+            }
+            60% {
+                color: rgba(186, 12, 248, 1);
+            }
+            70% {
+                color: rgba(251, 7, 217, 1);
+            }
+            80% {
+                color: rgba(255, 0, 0, 1);
+            }            
+            90% {
+                color: rgba(255, 154, 0, 1);
+            }
+            95% {
+                color: rgba(208, 222, 33, 1);
+            }
+            100% {
+                color: rgb(255, 255, 255);
+            }
+            
+        }
     }
 }

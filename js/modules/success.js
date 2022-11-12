@@ -22,10 +22,7 @@ function success (event, result, name, image) {
     let scoreChange = +mainScore.textContent + result;
 
     button.disabled = false;
-
-      event.target.style.filter = 'contrast(200%)';
-      event.target.style.color = 'black';
-      event.target.style.backgroundColor = 'white';
+      
       event.target.classList.add('score');
     
       birdName.textContent = name;

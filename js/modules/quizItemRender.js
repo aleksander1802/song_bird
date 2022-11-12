@@ -16,8 +16,7 @@ function quizItemRender (array, numberID, randomID, event, score) {
      
    } 
 
-   if (randomID !== id && !event.target.classList.contains('null')) {       
-    event.target.style.filter = 'drop-shadow(0px 0px 10px red) invert(100%)';  
+   if (randomID !== id && !event.target.classList.contains('null')) {
     event.target.classList.add('null');
     score -= 1
    }
