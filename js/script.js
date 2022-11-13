@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     button.addEventListener("click", () => {
-        birdName.textContent = 'Угадай, кто я?';
+        birdName.textContent = '******';
         birdImage.src = './styles/assets/img/guess.png';
         inroDiv.innerHTML = "";
 

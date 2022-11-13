@@ -24,13 +24,7 @@ function quizItemRender (array, numberID, randomID, event, score) {
    if (randomID !== id && button.disabled === true) {
     let wrongAudio = new Audio('./styles/assets/audio/wrong-answer.mp3');
     wrongAudio.play() 
-   }
-
-
-
-   
-   
-   
+   }   
 
     class BirdsItem {
         constructor(id, name, species, description, image, audio, randomID) {
