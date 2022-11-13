@@ -9,7 +9,7 @@ const {audio} = someItem;
 
 element.innerHTML = `
         <audio id="mainPlayer" src=${audio} preload="auto" hidden></audio>
-        <div class="audio__player_controls"> 
+        <div class="audio__player_controls audio__player_controls-360"> 
             <div class="audio__player_controlsButton">
                 <img class="audio__player_play"  src="./styles/assets/icons/play__button.svg" alt="play button">
                 <img class="audio__player_pause hide" src="./styles/assets/icons/pause__button.svg" alt="pause button">

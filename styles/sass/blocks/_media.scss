@@ -1,146 +1,380 @@
-@media (max-width: 1919px) { 
+@media (max-width: 1919px) {
 
-}
+    .audio {
+        &__player {
+            width: 100%;
 
-@media (max-width: 1599px) { 
-
-    #myVideo {
-        width: 1200px;        
-    }
-
-  .header {
-    &__main {
-        &_nav {
-            &-link {
-                font-size: 35px;
+            &_duration {
+                &-change {
+                    &-mini {
+                        width: 300px;
+                    }
+                }
             }
         }
     }
-  }    
+}
 
+@media (max-width: 1599px) {
 
-.index {
-    &__main {        
-        &_title {
-            font-size: 45px;
+    #myVideo {
+        width: 1200px;
+    }
+
+    .header {
+        &__main {
+            &_nav {
+                &-link {
+                    font-size: 35px;
+                }
+            }
         }
-        &_description {
+    }
+
+
+    .index {
+        &__main {
+            &_title {
+                font-size: 45px;
+            }
+
+            &_description {
+                width: 100%;
+                font-size: 30px;
+                margin-top: 30px;
+            }
+
+            &_start {
+                font-size: 45px;
+            }
+        }
+
+        &__footer {
+            margin-top: 40px;
+
+            &_link {
+                display: flex;
+                align-items: center;
+            }
+
+            &_year {
+                font-size: 20px;
+            }
+
+            &_rs {
+                width: 150px;
+            }
+        }
+
+    }
+
+    #github {
+        font-size: 40px;
+    }
+
+    .quiz {
+        &__category {
+            &_item {
+                font-size: 20px;
+            }
+
+        }
+
+        &__bird {
+            column-gap: 20px;
+        }
+
+        &__wrapper {
+            grid-template-rows: 480px;
+
+            &_options {
+                &-item {
+                    height: 80px;
+                }
+            }
+
+            &_item {
+                font-size: 35px;
+
+                &-description {
+                    font-size: 16px;
+                }
+            }
+
+            &_grid {
+                column-gap: 10px;
+                grid-template-columns: 250px 1fr;
+
+                &-name {
+                    font-size: 30px;
+                }
+
+                &-species {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .audio {
+        &__player {
             width: 100%;
-            font-size: 30px;
-            margin-top: 30px;
-        }
-        &_start {
-            font-size: 45px;
+
+            &_duration {
+                &-change {
+                    &-mini {
+                        width: 200px;
+                    }
+                }
+            }
         }
     }
 
-    &__footer {
-        margin-top: 40px;  
-        &_link {
-            display: flex;
-            align-items: center;
-        }
-        &_year {
-            font-size: 20px;
-        }    
-        &_rs {
-            width: 150px;
-        }  
-    }
-    
 }
 
-#github {
-    font-size: 40px;
-}
-
-}
-
-@media (max-width: 1199px) { 
+@media (max-width: 1199px) {
 
     #myVideo {
-        width: 992px;        
-    }
-
-.header {
-    &__link {
-        font-size: 50px;
-    }
-    &__main {
-        &_nav {
-            width: 300px;
-            &-link {
-                font-size: 25px;
-            }            
-        }
-    }
-}
-
-.index {
-    &__main {
-        margin-top: 20px;
-        &_title {
-            font-size: 35px;
-        }
-        &_description {
-            font-size: 25px;
-        }
-    }
-    &__footer {
-        &_year {
-            font-size: 15px;
-        }
-        &_rs {
-            width: 100px;
-        }
-    }
-    
-}
-
-#github {
-    font-size: 30px;
-}
-
-
-}
-
-@media (max-width: 991px) { 
-    #myVideo {
-        display: none;       
+        width: 992px;
     }
 
     .header {
         &__link {
             font-size: 50px;
         }
+
         &__main {
             &_nav {
                 width: 300px;
+
                 &-link {
                     font-size: 25px;
-                }            
+                }
+            }
+
+            &_score {
+                font-size: 40px;
             }
         }
     }
-    
+
     .index {
-        &__main {            
+        &__main {
+            margin-top: 20px;
+
             &_title {
-                font-size: 25px;
-            }
-            &_description {
-                font-size: 20px;
-            }
-            &_start {
                 font-size: 35px;
             }
-        } 
+
+            &_description {
+                font-size: 25px;
+            }
+        }
+
+        &__footer {
+            &_year {
+                font-size: 15px;
+            }
+
+            &_rs {
+                width: 100px;
+            }
+        }
+
     }
-    
+
     #github {
         font-size: 30px;
     }
-    
+
+    .quiz {
+        &__category {
+            &_item {
+                font-size: 18px;
+            }
+
+        }
+
+        &__wrapper {
+            grid-template-rows: 480px;
+
+            &_options {
+                &-item {
+                    height: 80px;
+                }
+            }
+
+            &_item {
+                font-size: 25px;
+
+                &-description {
+                    font-size: 16px;
+                }
+            }
+
+            &_grid {
+                column-gap: 10px;
+                grid-template-columns: 200px 1fr;
+                grid-template-rows: repeat(2, 75px);
+
+                &-image {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+    .audio {
+        &__player {
+
+            &_duration {
+
+                &-change {
+                    width: 300px;
+
+                    &-mini {
+                        width: 150px;
+                    }
+
+                }
+            }
+
+            &_volume {
+                &-change {
+                    &-mini {
+                        width: 80px;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    #myVideo {
+        display: none;
+    }
+
+    .header {
+        &__link {
+            font-size: 50px;
+        }
+
+        &__main {
+            &_nav {
+                width: 300px;
+
+                &-link {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .index {
+        &__main {
+            &_title {
+                font-size: 25px;
+            }
+
+            &_description {
+                font-size: 20px;
+            }
+
+            &_start {
+                font-size: 35px;
+            }
+        }
+    }
+
+    #github {
+        font-size: 30px;
+    }
+
+    .quiz {
+        &__bird {
+            &-name {
+                font-size: 45px;
+            }
+        }
+
+        &__category {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 40px);
+            justify-items: center;
+            margin: 0 auto;
+            margin-top: 10px;
+
+            &_item {
+                font-size: 18px;
+            }
+
+        }
+
+        &__wrapper {
+            grid-template-columns: 100%;
+            grid-template-rows: 420px auto;
+            grid-row-gap: 10px;
+
+            &_options {
+                &-item {
+                    height: 70px;
+                }
+            }
+
+            &_item {
+                font-size: 25px;
+
+                &-description {
+                    font-size: 16px;
+                }
+            }
+
+            &_grid {
+                column-gap: 10px;
+                grid-template-columns: 200px 1fr;
+                grid-template-rows: repeat(2, 75px);
+
+                &-image {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+    .audio {
+        &__player {
+
+            &_duration {
+
+                &-change {
+                    width: 200px;
+
+                    &-mini {
+                        width: 250px;
+                    }
+
+                }
+            }
+
+            &_volume {
+                &-change {
+                    width: 80px;
+
+                    &-mini {
+                        width: 100px;
+                    }
+
+                }
+            }
+        }
+    }
 
 
 
@@ -148,39 +382,49 @@
 }
 
 @media (max-width: 767px) {
-    
+
 
     .header {
         &__link {
             font-size: 30px;
         }
+
         &__main {
             &_title {
                 display: flex;
                 align-self: center;
             }
+
+            &_score {
+                font-size: 30px;
+            }
+
             &_nav {
                 width: 200px;
                 flex-direction: column;
+
                 &-link {
                     font-size: 25px;
-                }            
+                }
             }
         }
     }
-    
+
     .index {
-        &__main {            
+        &__main {
             &_title {
                 font-size: 25px;
             }
+
             &_description {
                 font-size: 20px;
             }
+
             &_start {
                 font-size: 25px;
             }
-        } 
+        }
+
         &__footer {
             flex-direction: column;
             align-items: center;
@@ -188,12 +432,112 @@
             margin-top: 10px;
         }
     }
-    
+
     #github {
         font-size: 20px;
         text-shadow: 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 10px #0072ff;
     }
-    
+
+    .quiz {
+
+        &__category {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 40px);
+            justify-items: center;
+            margin: 0 auto;
+            margin-top: 10px;
+
+            &_item {
+                font-size: 15px;
+            }
+
+        }
+
+        &__bird {
+            grid-template-columns: 125px 1fr;
+            grid-template-rows: repeat(2, 80px);
+            column-gap: 10px;
+
+            &-name {
+                font-size: 35px;
+            }
+
+            &-image {
+                max-width: 110px;
+                max-height: 110px;
+            }
+        }
+
+        &__wrapper {
+            grid-template-columns: 100%;
+            grid-template-rows: 420px auto;
+            grid-row-gap: 10px;
+
+            &_options {
+                &-item {
+                    height: 70px;
+                }
+            }
+
+            &_item {
+                font-size: 25px;
+
+                &-description {
+                    font-size: 16px;
+                }
+            }
+
+            &_grid {
+                &_name {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .audio {
+        &__player {
+            &_controlsButton {
+                width: 30px;
+                height: 30px;
+            }
+
+            &_duration {
+                &-time {
+                    font-size: 15px;
+                }
+
+                &-change {
+                    width: 100px;
+                    height: 20px;
+
+                    &-mini {
+                        width: 180px;
+                    }
+
+                }
+            }
+
+            &_mute {
+                max-width: 30px;
+                max-height: 30px;
+            }
+
+            &_volume {
+                &-change {
+                    width: 50px;
+                    height: 20px;
+
+                    &-mini {
+                        width: 80px;
+                    }
+
+                }
+            }
+        }
+    }
+
 
 }
 
@@ -202,39 +546,50 @@
 
     .header {
         &__link {
-            font-size: 30px;
+            font-size: 20px;
         }
+
         &__main {
             &_title {
                 display: flex;
                 align-self: center;
             }
+
+            &_score {
+                font-size: 20px;
+            }
+
             &_nav {
                 width: 200px;
                 flex-direction: column;
+
                 &-link {
                     font-size: 20px;
-                }            
+                }
             }
         }
     }
-    
+
     .index {
-        &__main {            
+        &__main {
             &_title {
                 font-size: 20px;
             }
+
             &_description {
                 font-size: 15px;
-                
-            }            
+
+            }
+
             &_start {
                 font-size: 15px;
+
                 &:hover {
-                    text-transform: none;               
-                }                
+                    text-transform: none;
+                }
             }
-        } 
+        }
+
         &__footer {
             flex-direction: column;
             align-items: center;
@@ -242,13 +597,118 @@
             margin-top: 10px;
         }
     }
-    
+
     #github {
         font-size: 15px;
         text-shadow: 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 10px #0072ff;
     }
-    
+
+    .quiz {
+
+        &__category {
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(6, 25px);
+            height: auto;
+
+            &_item {
+                font-size: 15px;
+            }
+
+        }
+
+        &__bird {
+            grid-template-columns: 110px 1fr;
+            grid-template-rows: 40px 95px;
+            column-gap: 10px;
+
+            &-name {
+                font-size: 20px;
+            }
+
+            &-image {
+                max-width: 80px;
+                max-height: 80px;
+            }
+        }
+
+        &__wrapper {
+            grid-template-rows: 300px auto;
+
+            &_options {
+                &-item {
+                    height: 50px;
+                    font-size: 25px;
+                }
+            }
+
+            &_item {
+                font-size: 19px;
+            }
+
+            &_grid {
+                grid-template-columns: 120px 1fr;
+                grid-template-rows: repeat(2, 50px);
+
+                &-image {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                &-name {
+                    font-size: 19px;
+                }
+
+                &-species {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .audio {
+        &__player {
+            &_controls {
+                &-360 {
+                    display: grid;
+                    grid-template-columns: 40px auto;
+                    grid-template-rows: 50px 30px;
+                    justify-content: start;
+                }
+
+                &-mini {
+                    display: grid;
+                    grid-template-columns: 40px auto;
+                    grid-template-rows: 50px 30px;
+                }
+            }
+
+            &_duration {
+                &-time {
+                    font-size: 14px;
+                }
+
+                &-change {
+                    height: 15px;
+
+                }
+            }
+
+            &_mute {
+                max-width: 30px;
+                max-height: 30px;
+            }
+
+            &_volume {
+                &-change {
+                    width: 100px;
+                    height: 15px;
+
+                    &-mini {
+                        width: 180px;
+                    }
+                }
+            }
+        }
+    }
 
 }
-
-

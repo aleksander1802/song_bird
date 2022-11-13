@@ -6,7 +6,7 @@ function audioPlayerRenderMini(someItem) {
 
     element.innerHTML = `
     <audio id="miniPlayer" src=${someItem} preload="auto" hidden></audio>
-    <div class="audio__player_controls"> 
+    <div class="audio__player_controls audio__player_controls-mini"> 
             <div class="audio__player_controlsButton">
                 <img id="audio__player_play" class="audio__player_play audio__player_play-mini"  src="./styles/assets/icons/play__button.svg" alt="play button">
                 <img id="audio__player_pause" class="audio__player_pause audio__player_pause-mini hide" src="./styles/assets/icons/pause__button.svg" alt="pause button">
@@ -20,7 +20,7 @@ function audioPlayerRenderMini(someItem) {
                     step="1" 
                     type="range" 
                     id="durationRange" 
-                    class="audio__player_duration-change">
+                    class="audio__player_duration-change audio__player_duration-change-mini">
                 <div class="audio__player_duration-time audio__player_duration-time-mini">
                     <span 
                         id="currentTimer"  
