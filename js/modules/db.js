@@ -1,4 +1,3 @@
-
 const trainingBirdsData = [
     {
       "id": 1,

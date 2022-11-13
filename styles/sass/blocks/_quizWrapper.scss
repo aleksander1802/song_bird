@@ -9,7 +9,8 @@
         &_options {
             background: rgb(0, 0, 0);
             border: 1px solid cyan;
-            border-radius: 5px;            
+            border-radius: 5px;   
+            position: relative;         
             &-item {
                 display: flex;
                 height: 90px;

@@ -1,7 +1,3 @@
-
-
-
-
 function audioPlayerMini () { 
      
     let audio = document.getElementById('miniPlayer');

@@ -1,7 +1,3 @@
-
-
-
-
 function success (event, result, name, image) { 
 
     const button = document.querySelector('.button__quiz_next');
@@ -28,7 +24,7 @@ function success (event, result, name, image) {
       birdName.textContent = name;
       birdImage.src = image;
 
-      mainScore.textContent = `${scoreChange}`
+      mainScore.textContent = `${scoreChange}`      
       
 }
 

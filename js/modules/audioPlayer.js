@@ -1,4 +1,3 @@
-
 function audioPlayer () { 
      
     let audio = document.getElementById('mainPlayer');

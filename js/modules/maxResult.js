@@ -1,6 +1,6 @@
 
 
-const maxResult = (score) => {
+const maxResult = () => {
 
     const mainResult = document.querySelector('.results__main');
     mainResult.innerHTML = '';    
@@ -9,13 +9,14 @@ const maxResult = (score) => {
 
     element.innerHTML = `
     <div class="results__main_score">
-        Ваш итоговый счёт: ${score} баллов. <br>
-        Желаете пройти викторину ещё раз?
+        Поздравляем!<br>
+        Вы прошли игру и набрали максимальный балл!  
     </div>
 
-    <div class="results__main_variants">        
-        <div><a class="header__main_nav-link" href="./main.html">Пройти викторину ещё раз</a></div>
-        <div><a class="header__main_nav-link" href="./index.html">Вернуться на главную</a></div>
+    <div class="results__main_variants">  
+        <div class="results__main_variants-link">
+            <a class="header__main_nav-link" href="./index.html">Вернуться на главную</a>
+        </div>
     </div>    
     `
     

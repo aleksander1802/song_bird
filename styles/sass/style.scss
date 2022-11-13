@@ -43,14 +43,25 @@ body {
 
 .null {
     background-color: rgba(255, 0, 0, 0.166);
-    color: black;
+    color: white;
     text-shadow: 0 0 10px crimson;
     filter: drop-shadow(0 0 0.75rem crimson); 
     border: 1px solid black; 
     &:hover {
         background-color: rgba(255, 0, 0, 0.433);
-        color: black;
+        color: white;
         text-shadow: 0 0 10px rgb(242, 242, 242);        
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        background-color: crimson;
+        left: 5%;
+        top: 50%; 
+        transform: translateY(-50%);       
     }
 }
 
@@ -64,6 +75,17 @@ body {
     font-weight: 700;
     &:hover {
         color: black; 
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        background-color: cyan;
+        left: 5%;
+        top: 50%; 
+        transform: translateY(-50%);       
     }
 }
 
