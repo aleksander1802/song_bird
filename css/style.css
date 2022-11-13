@@ -798,7 +798,7 @@ body {
 }
 .index__main_description {
   margin: 0 auto;
-  width: 800px;
+  width: 1200px;
   font-size: 40px;
 }
 .index__main_link {
@@ -911,7 +911,7 @@ body {
   right: 0;
   bottom: 0;
   min-width: 100%;
-  min-height: 90%;
+  min-height: 100%;
   z-index: -1;
 }
 
@@ -951,6 +951,198 @@ body {
   text-align: center;
 }
 
+@media (max-width: 1599px) {
+  #myVideo {
+    width: 1200px;
+  }
+  .header__main_nav-link {
+    font-size: 35px;
+  }
+  .index__main_title {
+    font-size: 45px;
+  }
+  .index__main_description {
+    width: 100%;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .index__main_start {
+    font-size: 45px;
+  }
+  .index__footer {
+    margin-top: 40px;
+  }
+  .index__footer_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .index__footer_year {
+    font-size: 20px;
+  }
+  .index__footer_rs {
+    width: 150px;
+  }
+  #github {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  #myVideo {
+    width: 992px;
+  }
+  .header__link {
+    font-size: 50px;
+  }
+  .header__main_nav {
+    width: 300px;
+  }
+  .header__main_nav-link {
+    font-size: 25px;
+  }
+  .index__main {
+    margin-top: 20px;
+  }
+  .index__main_title {
+    font-size: 35px;
+  }
+  .index__main_description {
+    font-size: 25px;
+  }
+  .index__footer_year {
+    font-size: 15px;
+  }
+  .index__footer_rs {
+    width: 100px;
+  }
+  #github {
+    font-size: 30px;
+  }
+}
+@media (max-width: 991px) {
+  #myVideo {
+    display: none;
+  }
+  .header__link {
+    font-size: 50px;
+  }
+  .header__main_nav {
+    width: 300px;
+  }
+  .header__main_nav-link {
+    font-size: 25px;
+  }
+  .index__main_title {
+    font-size: 25px;
+  }
+  .index__main_description {
+    font-size: 20px;
+  }
+  .index__main_start {
+    font-size: 35px;
+  }
+  #github {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .header__link {
+    font-size: 30px;
+  }
+  .header__main_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .header__main_nav {
+    width: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__main_nav-link {
+    font-size: 25px;
+  }
+  .index__main_title {
+    font-size: 25px;
+  }
+  .index__main_description {
+    font-size: 20px;
+  }
+  .index__main_start {
+    font-size: 25px;
+  }
+  .index__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 200px;
+    margin-top: 10px;
+  }
+  #github {
+    font-size: 20px;
+    text-shadow: 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 10px #0072ff;
+  }
+}
+@media (max-width: 480px) {
+  .header__link {
+    font-size: 30px;
+  }
+  .header__main_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .header__main_nav {
+    width: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__main_nav-link {
+    font-size: 20px;
+  }
+  .index__main_title {
+    font-size: 20px;
+  }
+  .index__main_description {
+    font-size: 15px;
+  }
+  .index__main_start {
+    font-size: 15px;
+  }
+  .index__main_start:hover {
+    text-transform: none;
+  }
+  .index__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 150px;
+    margin-top: 10px;
+  }
+  #github {
+    font-size: 15px;
+    text-shadow: 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 10px #0072ff;
+  }
+}
 .hide {
   display: none;
 }

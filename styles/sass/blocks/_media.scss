@@ -1,0 +1,254 @@
+@media (max-width: 1919px) { 
+
+}
+
+@media (max-width: 1599px) { 
+
+    #myVideo {
+        width: 1200px;        
+    }
+
+  .header {
+    &__main {
+        &_nav {
+            &-link {
+                font-size: 35px;
+            }
+        }
+    }
+  }    
+
+
+.index {
+    &__main {        
+        &_title {
+            font-size: 45px;
+        }
+        &_description {
+            width: 100%;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        &_start {
+            font-size: 45px;
+        }
+    }
+
+    &__footer {
+        margin-top: 40px;  
+        &_link {
+            display: flex;
+            align-items: center;
+        }
+        &_year {
+            font-size: 20px;
+        }    
+        &_rs {
+            width: 150px;
+        }  
+    }
+    
+}
+
+#github {
+    font-size: 40px;
+}
+
+}
+
+@media (max-width: 1199px) { 
+
+    #myVideo {
+        width: 992px;        
+    }
+
+.header {
+    &__link {
+        font-size: 50px;
+    }
+    &__main {
+        &_nav {
+            width: 300px;
+            &-link {
+                font-size: 25px;
+            }            
+        }
+    }
+}
+
+.index {
+    &__main {
+        margin-top: 20px;
+        &_title {
+            font-size: 35px;
+        }
+        &_description {
+            font-size: 25px;
+        }
+    }
+    &__footer {
+        &_year {
+            font-size: 15px;
+        }
+        &_rs {
+            width: 100px;
+        }
+    }
+    
+}
+
+#github {
+    font-size: 30px;
+}
+
+
+}
+
+@media (max-width: 991px) { 
+    #myVideo {
+        display: none;       
+    }
+
+    .header {
+        &__link {
+            font-size: 50px;
+        }
+        &__main {
+            &_nav {
+                width: 300px;
+                &-link {
+                    font-size: 25px;
+                }            
+            }
+        }
+    }
+    
+    .index {
+        &__main {            
+            &_title {
+                font-size: 25px;
+            }
+            &_description {
+                font-size: 20px;
+            }
+            &_start {
+                font-size: 35px;
+            }
+        } 
+    }
+    
+    #github {
+        font-size: 30px;
+    }
+    
+
+
+
+
+}
+
+@media (max-width: 767px) {
+    
+
+    .header {
+        &__link {
+            font-size: 30px;
+        }
+        &__main {
+            &_title {
+                display: flex;
+                align-self: center;
+            }
+            &_nav {
+                width: 200px;
+                flex-direction: column;
+                &-link {
+                    font-size: 25px;
+                }            
+            }
+        }
+    }
+    
+    .index {
+        &__main {            
+            &_title {
+                font-size: 25px;
+            }
+            &_description {
+                font-size: 20px;
+            }
+            &_start {
+                font-size: 25px;
+            }
+        } 
+        &__footer {
+            flex-direction: column;
+            align-items: center;
+            height: 200px;
+            margin-top: 10px;
+        }
+    }
+    
+    #github {
+        font-size: 20px;
+        text-shadow: 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 10px #0072ff;
+    }
+    
+
+}
+
+
+@media (max-width: 480px) {
+
+    .header {
+        &__link {
+            font-size: 30px;
+        }
+        &__main {
+            &_title {
+                display: flex;
+                align-self: center;
+            }
+            &_nav {
+                width: 200px;
+                flex-direction: column;
+                &-link {
+                    font-size: 20px;
+                }            
+            }
+        }
+    }
+    
+    .index {
+        &__main {            
+            &_title {
+                font-size: 20px;
+            }
+            &_description {
+                font-size: 15px;
+                
+            }            
+            &_start {
+                font-size: 15px;
+                &:hover {
+                    text-transform: none;               
+                }                
+            }
+        } 
+        &__footer {
+            flex-direction: column;
+            align-items: center;
+            height: 150px;
+            margin-top: 10px;
+        }
+    }
+    
+    #github {
+        font-size: 15px;
+        text-shadow: 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 10px #0072ff;
+    }
+    
+
+}
+
+
