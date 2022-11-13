@@ -15,6 +15,8 @@ function playAgain () {
     if (result === 30) {
         maxResult()       
     }
+
+    console.log('Не успел реализовать Extra scope, а именно локализацию приложения на два языка и галерею всех птиц. Самооценка 250 баллов');
     
 
     const mainResult = document.querySelector('.results__main');

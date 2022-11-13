@@ -813,9 +813,6 @@ body {
   text-decoration: none;
   color: aquamarine;
 }
-.index__main_start:hover {
-  text-transform: uppercase;
-}
 .index__footer {
   font-size: 100px;
   display: -webkit-box;
@@ -1420,9 +1417,6 @@ body {
   }
   .index__main_start {
     font-size: 15px;
-  }
-  .index__main_start:hover {
-    text-transform: none;
   }
   .index__footer {
     -webkit-box-orient: vertical;
