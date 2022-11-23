@@ -1542,6 +1542,32 @@ body {
           transform: translateY(-50%);
 }
 
+.notnull {
+  background-color: rgba(255, 0, 0, 0);
+  color: white;
+  text-shadow: none;
+  -webkit-filter: drop-shadow(0 0 0.75rem rgba(220, 20, 60, 0));
+          filter: drop-shadow(0 0 0.75rem rgba(220, 20, 60, 0));
+  border: 1px solid cyan;
+}
+.notnull:hover {
+  background-color: rgba(255, 0, 0, 0);
+  color: white;
+  text-shadow: 0 0 10px rgb(242, 242, 242);
+}
+.notnull::before {
+  position: absolute;
+  content: "";
+  height: 0px;
+  width: 0px;
+  border-radius: 100%;
+  background-color: rgb(0, 0, 0);
+  left: 5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .score {
   -webkit-filter: contrast(200%);
           filter: contrast(200%);

@@ -13,18 +13,26 @@ function quizItemRender (array, numberID, randomID, event, score) {
 
    if(randomID === id && button.disabled === true) { 
     success(event, score, name, image);
-     
+    
    } 
 
    if (randomID !== id && !event.target.classList.contains('null')) {
-    event.target.classList.add('null');
+
+    if (button.disabled === false) {
+      event.target.classList.add('notnull')
+    } 
+      event.target.classList.add('null');
+    
+    
     score -= 1
    }
 
    if (randomID !== id && button.disabled === true) {
     let wrongAudio = new Audio('./styles/assets/audio/wrong-answer.mp3');
     wrongAudio.play() 
-   }   
+   }  
+   
+   
 
     class BirdsItem {
         constructor(id, name, species, description, image, audio, randomID) {
